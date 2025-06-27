@@ -144,4 +144,8 @@ const revenue = [
   { month: 'Dec', revenue: 4800 },
 ];
 
-export { users, customers, invoices, revenue };
+const Name = [
+  {Nom:'Valy',age:25},
+  {Nom:'momo',age:10},
+];
+export { users, customers, invoices, revenue ,Name};
