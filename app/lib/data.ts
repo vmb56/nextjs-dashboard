@@ -30,6 +30,11 @@ export async function fetchRevenue() {
   }
 }
 
+
+
+
+
+
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw[]>`
@@ -49,6 +54,11 @@ export async function fetchLatestInvoices() {
     throw new Error('Failed to fetch the latest invoices.');
   }
 }
+
+
+
+
+
 
 export async function fetchCardData() {
   try {
@@ -142,6 +152,10 @@ export async function fetchInvoicesPages(query: string) {
   }
 }
 
+
+
+
+
 export async function fetchInvoiceById(id: string) {
   try {
     const data = await sql<InvoiceForm[]>`
@@ -167,6 +181,10 @@ export async function fetchInvoiceById(id: string) {
   }
 }
 
+
+
+
+
 export async function fetchCustomers() {
   try {
     const customers = await sql<CustomerField[]>`
@@ -183,6 +201,10 @@ export async function fetchCustomers() {
     throw new Error('Failed to fetch all customers.');
   }
 }
+
+
+
+
 
 export async function fetchFilteredCustomers(query: string) {
   try {
